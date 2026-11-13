@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060a08" />
+    <meta
+      name="description"
+      content="Investrow Financial Services Pvt. Ltd. is an AMFI-registered mutual fund distributor in Dhanbad, Jharkhand. Clear, disciplined financial planning for mutual funds, insurance, tax, retirement and more."
+    />
+    <meta property="og:title" content="Investrow Financial Services | Clarity for your money" />
+    <meta
+      property="og:description"
+      content="An AMFI-registered mutual fund distributor helping people plan, invest and protect what matters. Based in Dhanbad, Jharkhand."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/home/home-about.png" />
+    <link rel="icon" type="image/png" href="/assets/brand/fav.png" />
+    <link rel="apple-touch-icon" href="/assets/brand/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Load Google Fonts without blocking the first paint.
+      The print → all trick: browser downloads the stylesheet in the background,
+      then swaps it to screen once it's ready, so it never blocks rendering.
+      font-display=swap in the Google URL ensures text stays visible during load.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Syne:wght@700;800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <title>Investrow Financial Services | Clarity for your money</title>
+    <script>
+      document.documentElement.classList.add("js");
+      // Apply stored theme BEFORE first paint to eliminate the flash-of-wrong-theme.
+      // This runs synchronously, so the browser never renders the wrong theme.
+      (function() {
+        var stored;
+        try { stored = localStorage.getItem("investrow_theme"); } catch(e) {}
+        var theme = (stored === "dark" || stored === "light") ? stored : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <style>
+        [data-reveal] { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

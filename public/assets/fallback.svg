@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Image unavailable">
+  <rect width="1200" height="800" fill="#E6EEE3"/>
+  <path d="M0 620 C220 520 340 690 560 580 C760 480 900 590 1200 430 L1200 800 L0 800 Z" fill="#D7F36A" opacity="0.45"/>
+  <circle cx="940" cy="180" r="118" fill="none" stroke="#176B50" stroke-width="2" opacity="0.35"/>
+  <path d="M200 480 L360 320 L500 430 L720 210" fill="none" stroke="#176B50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <text x="600" y="700" text-anchor="middle" font-family="Manrope, sans-serif" font-size="24" fill="#142C27" opacity="0.55">Investrow</text>
+</svg>

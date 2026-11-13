@@ -1,0 +1,11 @@
+/* Tailwind v4 — theme + utilities only, no preflight.
+   The Investrow site resets and styles everything itself in base.css, and all
+   custom stylesheet rules are unlayered, so they always win over these layered
+   Tailwind styles. Preflight is deliberately excluded so it cannot shift the
+   existing typography/spacing. This file exists to power registry components
+   installed with the Tailwind variant (e.g. React Bits Pro `-tw` components). */
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);

@@ -1,0 +1,175 @@
+:root {
+  /* Brand hues kept; surfaces + text are dark-theme values.
+     --offwhite is kept as the legacy "canvas" alias (flipped to near-black),
+     --canvas/--panel are the new semantic surface tokens. */
+  --forest-950: #000000;
+  --forest-900: #0a0f0d;
+  --forest-800: #000000;
+  --green-700: #1d8a64;
+  --green-600: #27a87b;
+  --green-500: #33c291;
+  --sage-100: transparent;
+  --sage-50: rgba(255, 255, 255, 0.04);
+  --offwhite: #000000;
+  --canvas: transparent;
+  --panel: transparent;
+  --panel-elevated: transparent;
+  --white: #ffffff;
+  --lime: #d7f36a;
+  --lime-soft: #e9f9b5;
+  --ink: #ffffff;
+  --ink-soft: #d5e3dc;
+  --muted: #a4b8af;
+  --muted-light: #7c9388;
+  --line: rgba(255, 255, 255, 0.13);
+  --line-strong: rgba(255, 255, 255, 0.24);
+  --line-light: rgba(255, 255, 255, 0.18);
+  --dark-muted: rgba(247, 248, 243, 0.76);
+  --accent-cyan: #38bdf8;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+  --accent-teal: #14b8a6;
+  --accent-purple: #a855f7;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 18px 40px -24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 36px 80px -40px rgba(0, 0, 0, 0.65);
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+  --container: 1240px;
+  --gutter: clamp(20px, 4vw, 44px);
+  --section-space: clamp(76px, 9vw, 132px);
+  --header-height: 76px;
+  --font-display: "Manrope Variable", "Manrope", "Segoe UI", sans-serif;
+  --font-body: "DM Sans Variable", "DM Sans", "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-logo: "Syne", "Cinzel", "Manrope Variable", "Manrope", sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Brand palette — Blue + Orange + White ───────────────────── */
+  --brand-blue: #2563eb;
+  --brand-blue-light: #3b82f6;
+  --brand-blue-dim: rgba(37, 99, 235, 0.18);
+  --brand-orange: #ea580c;
+  --brand-orange-light: #f97316;
+  --brand-orange-dim: rgba(234, 88, 12, 0.18);
+
+  /* ── Theme-aware surface tokens (dark mode defaults) ─────────── */
+  --theme-bg: #000000;
+  --theme-surface: rgba(13, 19, 16, 0.95);
+  --theme-surface-hover: rgba(18, 26, 22, 0.97);
+  --theme-border: rgba(255, 255, 255, 0.12);
+  --theme-border-hover: rgba(255, 255, 255, 0.28);
+  --theme-text: #ffffff;
+  --theme-text-muted: #a4b8af;
+  --theme-text-dim: rgba(255, 255, 255, 0.45);
+  --theme-inset: rgba(255, 255, 255, 0.18);
+  --theme-inset-hover: rgba(255, 255, 255, 0.28);
+  --theme-glass-tag-bg: rgba(255, 255, 255, 0.04);
+  --theme-glass-tag-border: rgba(255, 255, 255, 0.14);
+  --theme-glass-icon-bg: rgba(255, 255, 255, 0.04);
+  --theme-glass-icon-border: rgba(255, 255, 255, 0.10);
+  --theme-header-bg: rgba(0, 0, 0, 0.72);
+  --theme-header-border: rgba(255, 255, 255, 0.08);
+  --theme-dropdown-bg: rgba(8, 12, 10, 0.96);
+  --theme-dropdown-border: rgba(255, 255, 255, 0.1);
+  --theme-footer-bg: #000000;
+  --theme-card-shadow:
+    0 -4px 20px rgba(0, 0, 0, 0.5),
+    0 24px 54px -10px rgba(0, 0, 0, 0.85),
+    inset 0 1px 1px 0 var(--theme-inset);
+  --theme-card-shadow-hover:
+    0 -4px 20px rgba(0, 0, 0, 0.5),
+    0 28px 60px -8px rgba(0, 0, 0, 0.9),
+    inset 0 1px 1px 0 var(--theme-inset-hover);
+
+  /* ── Chart & allocation tokens (dark mode defaults) ──────────── */
+  --chart-value: #1d8a64;
+  --chart-invested: #9aab9f;
+  --chart-secondary: #27a87b;
+  --chart-target: #5c6f66;
+  --color-equity: #176b50;
+  --color-debt: #9aab9f;
+  --color-gold: #d7f36a;
+}
+
+/* ── Light theme overrides ───────────────────────────────────────── */
+[data-theme="light"] {
+  --forest-950: #f8fafc;
+  --forest-900: #ffffff;
+  --forest-800: #f1f5f9;
+  --green-700: #2563eb;
+  --green-600: #3b82f6;
+  --green-500: #2563eb;
+  --lime: #2563eb;
+  --lime-soft: rgba(37, 99, 235, 0.10);
+  --sage-100: rgba(0, 0, 0, 0.035);
+  --sage-50: rgba(0, 0, 0, 0.02);
+  --offwhite: #f2f4f3;
+  --canvas: transparent;
+
+  --chart-value: #2563eb;
+  --chart-invested: #94a3b8;
+  --chart-secondary: #3b82f6;
+  --chart-target: #64748b;
+  --color-equity: #2563eb;
+  --color-debt: #94a3b8;
+  --color-gold: #f59e0b;
+
+  --white: #000000;
+  --ink: #000000;
+  --ink-soft: #1a221e;
+  --muted: #3f4e46;
+  --muted-light: #526359;
+  --dark-muted: #2c3831;
+  --line: rgba(0, 0, 0, 0.12);
+  --line-strong: rgba(0, 0, 0, 0.22);
+  --line-light: rgba(0, 0, 0, 0.15);
+  --panel: rgba(255, 255, 255, 0.94);
+  --panel-elevated: #ffffff;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 14px 34px -16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 24px 60px -24px rgba(0, 0, 0, 0.16);
+
+  --theme-bg: #f2f4f3;
+  --theme-surface: rgba(255, 255, 255, 0.96);
+  --theme-surface-hover: #ffffff;
+  --theme-border: rgba(0, 0, 0, 0.12);
+  --theme-border-hover: rgba(0, 0, 0, 0.25);
+  --theme-text: #000000;
+  --theme-text-muted: #33423a;
+  --theme-text-dim: #4d5d55;
+  --theme-inset: rgba(255, 255, 255, 0.90);
+  --theme-inset-hover: rgba(255, 255, 255, 1.0);
+  --theme-glass-tag-bg: rgba(0, 0, 0, 0.04);
+  --theme-glass-tag-border: rgba(0, 0, 0, 0.12);
+  --theme-glass-icon-bg: rgba(0, 0, 0, 0.04);
+  --theme-glass-icon-border: rgba(0, 0, 0, 0.10);
+  --theme-header-bg: rgba(242, 244, 243, 0.92);
+  --theme-header-border: rgba(0, 0, 0, 0.09);
+  --theme-dropdown-bg: rgba(255, 255, 255, 0.98);
+  --theme-dropdown-border: rgba(0, 0, 0, 0.10);
+  --theme-footer-bg: #0c1410;
+  --theme-card-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.05),
+    0 16px 40px -10px rgba(0, 0, 0, 0.10),
+    inset 0 1px 1px 0 var(--theme-inset);
+  --theme-card-shadow-hover:
+    0 4px 18px rgba(0, 0, 0, 0.08),
+    0 24px 56px -8px rgba(0, 0, 0, 0.14),
+    inset 0 1px 1px 0 var(--theme-inset-hover);
+}
+
+::selection {
+  background: var(--brand-blue);
+  color: #ffffff;
+}
+
+[data-theme="light"] ::selection {
+  background: var(--brand-blue);
+  color: #ffffff;
+}
